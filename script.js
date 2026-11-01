@@ -34,12 +34,10 @@ tombolHitungSelisih.addEventListener("click", () => {
   let status = "";
 
   if (selisih === 0) {
-    status = "Pas";
-  } else if (selisih > 0) {
-    status = "Plus";
+    status = `${selisih} setoran PAS`;
   } else {
-    ("Mines (Harus Nombok)");
+    status = `kurang ${selisih}, harus nombok = ${selisih}`;
   }
 
-  hasilSelisihEl.textContent = `Hasil : ${selisih}, ${status}`;
+  hasilSelisihEl.textContent = `${status}`;
 });
