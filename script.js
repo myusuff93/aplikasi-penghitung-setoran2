@@ -30,4 +30,16 @@ tombolHitungSelisih.addEventListener("click", () => {
   const selisih = setoran - pendapatan;
 
   const hasilSelisihEl = document.querySelector(".hasilSelisih");
+
+  let status = "";
+
+  if (selisih === 0) {
+    status = "Pas";
+  } else if (selisih > 0) {
+    status = "Plus";
+  } else {
+    ("Mines (Harus Nombok)");
+  }
+
+  hasilSelisihEl.textContent = `Hasil : ${selisih}, ${status}`;
 });
