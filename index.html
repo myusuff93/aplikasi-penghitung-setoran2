@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplikasi penghitung setoran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Aplikasi Penghitung Setoran</h1>
+    </header>
+
+    <section class="pendapatan-shift">
+      <h2>Pendapatan Shift</h2>
+      <div class="shift1">
+        <label for="shift1">Pendapatan Shift 1 : </label>
+        <input type="number" id="shift1" />
+      </div>
+
+      <div class="shift2">
+        <label for="shift2">Pendapatan Shift 2 : </label>
+        <input type="number" id="shift2" />
+      </div>
+
+      <div class="shift3">
+        <label for="shift3">Pendapatan Shift 3 : </label>
+        <input type="number" id="shift3" />
+      </div>
+
+      <button id="btnJumlahkanPendapatanShift">
+        Jumlahkan Pendapatan Shift
+      </button>
+
+      <div id="hasilPendapatanShift">
+        Jumlah Pendapatan Shift = <span id="hasilJumlahPendapatanShift"></span>
+      </div>
+    </section>
+
+    <section class="setoran">
+      <h2>Setoran</h2>
+      <div>
+        <label for="totalSetoran">Total Setoran : </label>
+        <input type="number" id="totalSetoran" />
+      </div>
+
+      <button id="btnHitungSelisih">Hitung Selisih</button>
+
+      <div class="hasilSelisih"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
