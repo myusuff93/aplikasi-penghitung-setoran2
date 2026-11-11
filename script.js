@@ -71,6 +71,7 @@ tombolReset.addEventListener("click", () => {
   document.getElementById("shift1Pk1").value = "";
   document.getElementById("shift1Pk4").value = "";
   document.getElementById("shift2Pk1").value = "";
+  document.getElementById("shift2Pk4").value = "";
   document.getElementById("shift3Pk1").value = "";
   document.getElementById("shift3Pk4").value = "";
   document.getElementById("totalSetoran").value = "";
